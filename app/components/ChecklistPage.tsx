@@ -2,18 +2,20 @@ import Link from "next/link";
 
 export default function ChecklistPages({ title, categories }: any) {
 	return (
-		<main className="min-h-screen bg-white text-black">
-			<div className="max-w-2xl mx-auto px-6 py-24">
+		<main className="min-h-screen bg-white text-black pb-[10vh]">
+			<div className="max-w-2xl mx-auto px-6 pt-24">
 				{/* Header */}
-				<div className="mb-16">
+				<div className="mb-[4vh]">
 					<Link
 						href="/"
-						className="text-gray-400 hover:text-gray-600 transition-colors mb-8 inline-block"
+						className="text-gray-400 hover:text-gray-600 transition-colors mb-[1vh] inline-block"
 					>
 						← Back
 					</Link>
-					<h1 className="text-5xl font-light mb-2 tracking-tight">{title}</h1>
-					<div className="w-12 h-px bg-gray-200 mt-4" />
+					<h1 className="text-[6vh] font-light mb-2 tracking-tight vintageone">
+						{title}
+					</h1>
+					<div className="w-[3vw] h-px bg-gray-200 mt-4" />
 				</div>
 
 				{/* Categories */}
