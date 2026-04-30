@@ -2,9 +2,10 @@ import Link from "next/link";
 
 const scenarios = [
 	{ name: "Purse Items", slug: "purse" },
-	{ name: "1–3 Day Trip", slug: "trip-short" },
+	{ name: "1-3 Day Trip", slug: "trip-short" },
 	{ name: "3+ Day Suitcase", slug: "trip-long" },
 	{ name: "Grocery Shopping", slug: "groceries" },
+	{ name: "Tech Backpack", slug: "tech-backpack" },
 ];
 
 export default function Home() {
