@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export default function ChecklistPages({ title, categories }: any) {
 	return (
-		<main className="min-h-screen bg-white text-black pb-[10vh]">
-			<div className="max-w-2xl mx-auto px-6 pt-24">
+		<main className="min-h-screen text-black pb-[10vh]">
+			<div className="w-[40vw] mx-auto px-6 pt-24">
 				{/* Header */}
 				<div className="mb-[4vh]">
 					<Link

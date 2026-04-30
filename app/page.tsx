@@ -10,25 +10,29 @@ const scenarios = [
 
 export default function Home() {
 	return (
-		<main className="min-h-screen bg-white text-black">
-			<div className="max-w-2xl mx-auto px-6 py-32">
-				<div className="mb-16">
-					<h1 className="text-[6vh] font-normal mb-2 vintageone">ReadySet</h1>
-					<p className="text-gray-400">Smart checklists for every scenario</p>
+		<main className="min-h-screen text-black">
+			<div className="w-[40vw] mx-auto px-[1vw] pt-[15vh]">
+				<div className="mb-[6vh]">
+					<h1 className="text-[6vh] font-normal mb-[1vh] vintageone">
+						Ready or Not
+					</h1>
+					<p className="text-neutral-700 text-[2vh] font-extralight">
+						Smart checklists for every scenario
+					</p>
 				</div>
 
-				<div className="space-y-0 divide-y divide-gray-100">
+				<div className="space-y-0 divide-y divide-neutral-300">
 					{scenarios.map((s) => (
 						<Link
 							key={s.slug}
 							href={`/checklists/${s.slug}`}
-							className="block py-5 group"
+							className="block py-[2vh] group"
 						>
 							<div className="flex justify-between items-center">
-								<span className="text-lg font-light group-hover:text-gray-600 transition-colors">
+								<span className="text-black text-[2vh] font-light group-hover:text-gray-600 transition-colors">
 									{s.name}
 								</span>
-								<span className="text-gray-300 group-hover:text-gray-400 transition-colors">
+								<span className="text-neutral-700 transition-colors w-[2vw] h-[2vw] text-[2vh] rounded-full bg-white border-[0.1vh] border-black flex items-center justify-center">
 									→
 								</span>
 							</div>
