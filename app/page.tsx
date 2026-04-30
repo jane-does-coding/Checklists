@@ -13,7 +13,7 @@ export default function Home() {
 		<main className="min-h-screen bg-white text-black">
 			<div className="max-w-2xl mx-auto px-6 py-32">
 				<div className="mb-16">
-					<h1 className="text-5xl font-normal mb-2">ReadySet</h1>
+					<h1 className="text-5xl font-normal mb-2 vintageone">ReadySet</h1>
 					<p className="text-gray-400">Smart checklists for every scenario</p>
 				</div>
 
