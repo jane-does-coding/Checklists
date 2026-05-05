@@ -20,7 +20,7 @@ export default function ChecklistPages({ title, categories }: any) {
 
 	return (
 		<main className="min-h-screen text-black pb-[10vh]">
-			<div className="w-[40vw] mx-auto px-6 pt-24">
+			<div className="w-[40vw] mx-auto px-6 pt-[10vh]">
 				{/* Header */}
 				<div className="mb-[4vh]">
 					<Link

@@ -14,7 +14,7 @@ export default function CustomPage() {
 	return (
 		<main className="min-h-screen text-black">
 			<div className="w-[40vw] mx-auto px-6 pt-24">
-				<Link href="/" className="text-gray-400 hover:text-gray-600">
+				<Link href="/" className=" hover:text-gray-600">
 					← Back
 				</Link>
 
@@ -24,7 +24,7 @@ export default function CustomPage() {
 
 				<Link
 					href="/custom/new"
-					className="block mb-8 border px-4 py-3 hover:bg-black hover:text-white transition"
+					className="block px-4 py-[2vh] transition border-b text-neutral-700 border-neutral-300 text-[2vh]"
 				>
 					+ Create New Checklist
 				</Link>
@@ -34,7 +34,7 @@ export default function CustomPage() {
 						<Link
 							key={c.id}
 							href={`/custom/${c.id}`}
-							className="block border px-4 py-3 hover:bg-gray-50"
+							className="block px-4 py-[2vh] transition border-b text-neutral-700 border-neutral-300 text-[2vh]"
 						>
 							{c.title}
 						</Link>

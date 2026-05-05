@@ -6,14 +6,13 @@ const scenarios = [
 	{ name: "3+ Day Suitcase", slug: "trip-long" },
 	{ name: "Grocery Shopping", slug: "groceries" },
 	{ name: "Tech Backpack", slug: "tech-backpack" },
-	{ name: "Custom Checklists", slug: "/custom" },
 ];
 
 export default function Home() {
 	return (
 		<main className="min-h-screen text-black">
-			<div className="w-[40vw] mx-auto px-[1vw] pt-[15vh]">
-				<div className="mb-[6vh]">
+			<div className="w-[40vw] mx-auto px-[1vw] pt-[10vh]">
+				<div className="mb-[3vh]">
 					<h1 className="text-[6vh] font-normal mb-[1vh] vintageone">
 						Ready or Not
 					</h1>
@@ -22,12 +21,29 @@ export default function Home() {
 					</p>
 				</div>
 
-				<div className="space-y-0 divide-y divide-neutral-300">
-					{scenarios.map((s) => (
+				<div className="space-y-0 divide-neutral-300">
+					<Link
+						href={"/custom"}
+						className="block py-[2vh] border-b border-neutral-300"
+					>
+						<div className="flex justify-between items-center">
+							<span
+								className={`"text-black text-[2vh] font-light group-hover:text-gray-600 transition-colors "`}
+							>
+								Custom Checklists
+							</span>
+							<span className="text-neutral-700 transition-colors w-[2vw] h-[2vw] text-[2vh] rounded-full bg-white border-[0.1vh] border-black flex items-center justify-center">
+								→
+							</span>
+						</div>
+					</Link>
+					{scenarios.map((s, i) => (
 						<Link
 							key={s.slug}
 							href={s.slug.startsWith("/") ? s.slug : `/checklists/${s.slug}`}
-							className="block py-[2vh] group"
+							className={`block py-[2vh] group  ${
+								i == scenarios.length - 1 ? "border-none" : "border-b"
+							} border-neutral-300`}
 						>
 							<div className="flex justify-between items-center">
 								<span className="text-black text-[2vh] font-light group-hover:text-gray-600 transition-colors">
