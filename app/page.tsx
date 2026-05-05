@@ -6,6 +6,7 @@ const scenarios = [
 	{ name: "3+ Day Suitcase", slug: "trip-long" },
 	{ name: "Grocery Shopping", slug: "groceries" },
 	{ name: "Tech Backpack", slug: "tech-backpack" },
+	{ name: "Custom Checklists", slug: "/custom" },
 ];
 
 export default function Home() {
@@ -25,7 +26,7 @@ export default function Home() {
 					{scenarios.map((s) => (
 						<Link
 							key={s.slug}
-							href={`/checklists/${s.slug}`}
+							href={s.slug.startsWith("/") ? s.slug : `/checklists/${s.slug}`}
 							className="block py-[2vh] group"
 						>
 							<div className="flex justify-between items-center">
