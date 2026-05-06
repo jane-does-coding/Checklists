@@ -36,26 +36,26 @@ export default function NewChecklistPage() {
 						placeholder="Checklist Title"
 						value={title}
 						onChange={(e) => setTitle(e.target.value)}
-						className="w-full border p-3"
+						className="w-full border-b border-neutral-300 p-[1vh]"
 					/>
 
 					<input
 						placeholder="Category"
 						value={category}
 						onChange={(e) => setCategory(e.target.value)}
-						className="w-full border p-3"
+						className="w-full border-b border-neutral-300 p-[1vh]"
 					/>
 
 					<textarea
 						placeholder="One item per line"
 						value={items}
 						onChange={(e) => setItems(e.target.value)}
-						className="w-full border p-3 h-48"
+						className="w-full border-b border-neutral-300 p-[1vh] h-48"
 					/>
 
 					<button
 						onClick={handleSave}
-						className="border px-6 py-3 hover:bg-black hover:text-white transition"
+						className="border border-neutral-300 w-full px-6 py-3 hover:bg-neutral-400/30 hover:text-black cursor-pointer text-neutral-700 transition"
 					>
 						Save Checklist
 					</button>
